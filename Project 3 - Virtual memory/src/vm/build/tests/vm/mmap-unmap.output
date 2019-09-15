@@ -1,0 +1,40 @@
+Copying tests/vm/mmap-unmap into /tmp/8eaMt52Lww.dsk...
+Copying ../../tests/vm/sample.txt into /tmp/8eaMt52Lww.dsk...
+Writing command line to /tmp/wZpGLrB1PU.dsk...
+qemu -hda /tmp/wZpGLrB1PU.dsk -hdb /tmp/uaoAA3lUzR.dsk -hdc /tmp/8eaMt52Lww.dsk -hdd /tmp/GzhRuUINwA.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put mmap-unmap put sample.txt run mmap-unmap
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+373 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 102 sector (51 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Putting 'mmap-unmap' into the file system...
+Putting 'sample.txt' into the file system...
+Executing 'mmap-unmap':
+(mmap-unmap) begin
+(mmap-unmap) open "sample.txt"
+(mmap-unmap) mmap "sample.txt"
+Page fault at 0x10000000: not present error reading page in user context.
+mmap-unmap: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048107
+ cr2=10000000 error=00000004
+ eax=00000001 ebx=00000002 ecx=ffffffdf edx=00000001
+ esi=00000000 edi=00000000 esp=bfffff80 ebp=bfffff98
+ cs=001b ds=0023 es=0023 ss=0023
+mmap-unmap: exit(-1)
+Execution of 'mmap-unmap' complete.
+Timer: 82 ticks
+Thread: 30 idle ticks, 49 kernel ticks, 3 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 98 reads, 214 writes
+hd1:0: 102 reads, 0 writes
+hd1:1: 0 reads, 0 writes
+Console: 1388 characters output
+Keyboard: 0 keys pressed
+Exception: 6 page faults
+Powering off...

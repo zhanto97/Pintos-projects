@@ -1,0 +1,39 @@
+Copying tests/vm/mmap-clean into /tmp/wWxeuDTevC.dsk...
+Copying ../../tests/vm/sample.txt into /tmp/wWxeuDTevC.dsk...
+Writing command line to /tmp/3BdjDCXVWi.dsk...
+qemu -hda /tmp/3BdjDCXVWi.dsk -hdb /tmp/dRq2YkmxFV.dsk -hdc /tmp/wWxeuDTevC.dsk -hdd /tmp/fm71Y3PuB1.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put mmap-clean put sample.txt run mmap-clean
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+373 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 104 sector (52 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Putting 'mmap-clean' into the file system...
+Putting 'sample.txt' into the file system...
+Executing 'mmap-clean':
+(mmap-clean) begin
+(mmap-clean) open "sample.txt"
+(mmap-clean) mmap "sample.txt"
+(mmap-clean) write "sample.txt"
+(mmap-clean) munmap "sample.txt"
+(mmap-clean) seek "sample.txt"
+(mmap-clean) read "sample.txt"
+(mmap-clean) file change was retained after munmap
+(mmap-clean) end
+mmap-clean: exit(0)
+Execution of 'mmap-clean' complete.
+Timer: 87 ticks
+Thread: 30 idle ticks, 54 kernel ticks, 3 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 106 reads, 219 writes
+hd1:0: 104 reads, 0 writes
+hd1:1: 0 reads, 0 writes
+Console: 1214 characters output
+Keyboard: 0 keys pressed
+Exception: 6 page faults
+Powering off...

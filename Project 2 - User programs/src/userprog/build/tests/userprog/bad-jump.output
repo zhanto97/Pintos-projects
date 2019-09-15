@@ -1,0 +1,34 @@
+Copying tests/userprog/bad-jump into /tmp/hm4nFz3GqR.dsk...
+Writing command line to /tmp/YSWniW1HAW.dsk...
+qemu -hda /tmp/YSWniW1HAW.dsk -hdb /tmp/My7TY2INqz.dsk -hdc /tmp/hm4nFz3GqR.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put bad-jump run bad-jump
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 137 sector (68 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 97 sector (48 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Putting 'bad-jump' into the file system...
+Executing 'bad-jump':
+(bad-jump) begin
+Page fault at 0: not present error reading page in user context.
+bad-jump: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0
+ cr2=00000000 error=00000004
+ eax=00000000 ebx=00000000 ecx=0804bfee edx=00000027
+ esi=00000000 edi=00000000 esp=bfffff7c ebp=bfffff98
+ cs=001b ds=0023 es=0023 ss=0023
+bad-jump: exit(-1)
+Execution of 'bad-jump' complete.
+Timer: 84 ticks
+Thread: 30 idle ticks, 52 kernel ticks, 2 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 59 reads, 202 writes
+hd1:0: 97 reads, 0 writes
+Console: 1124 characters output
+Keyboard: 0 keys pressed
+Exception: 1 page faults
+Powering off...

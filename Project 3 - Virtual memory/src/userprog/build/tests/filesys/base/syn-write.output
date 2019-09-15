@@ -1,0 +1,63 @@
+Copying tests/filesys/base/syn-write into /tmp/vW8PObs_Au.dsk...
+Copying tests/filesys/base/child-syn-wrt into /tmp/vW8PObs_Au.dsk...
+Writing command line to /tmp/me2qqnqhpX.dsk...
+qemu -hda /tmp/me2qqnqhpX.dsk -hdb /tmp/MIYBctTmDk.dsk -hdc /tmp/vW8PObs_Au.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put syn-write put child-syn-wrt run syn-write
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 137 sector (68 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 213 sector (106 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Putting 'syn-write' into the file system...
+Putting 'child-syn-wrt' into the file system...
+Executing 'syn-write':
+(syn-write) begin
+(syn-write) create "stuff"
+(syn-write) exec child 1 of 10: "child-syn-wrt 0"
+child-syn-wrt: exit(0)
+(syn-write) exec child 2 of 10: "child-syn-wrt 1"
+child-syn-wrt: exit(1)
+(syn-write) exec child 3 of 10: "child-syn-wrt 2"
+child-syn-wrt: exit(2)
+(syn-write) exec child 4 of 10: "child-syn-wrt 3"
+child-syn-wrt: exit(3)
+(syn-write) exec child 5 of 10: "child-syn-wrt 4"
+child-syn-wrt: exit(4)
+(syn-write) exec child 6 of 10: "child-syn-wrt 5"
+child-syn-wrt: exit(5)
+(syn-write) exec child 7 of 10: "child-syn-wrt 6"
+child-syn-wrt: exit(6)
+(syn-write) exec child 8 of 10: "child-syn-wrt 7"
+child-syn-wrt: exit(7)
+(syn-write) exec child 9 of 10: "child-syn-wrt 8"
+child-syn-wrt: exit(8)
+(syn-write) exec child 10 of 10: "child-syn-wrt 9"
+child-syn-wrt: exit(9)
+(syn-write) wait for child 1 of 10 returned 0 (expected 0)
+(syn-write) wait for child 2 of 10 returned 1 (expected 1)
+(syn-write) wait for child 3 of 10 returned 2 (expected 2)
+(syn-write) wait for child 4 of 10 returned 3 (expected 3)
+(syn-write) wait for child 5 of 10 returned 4 (expected 4)
+(syn-write) wait for child 6 of 10 returned 5 (expected 5)
+(syn-write) wait for child 7 of 10 returned 6 (expected 6)
+(syn-write) wait for child 8 of 10 returned 7 (expected 7)
+(syn-write) wait for child 9 of 10 returned 8 (expected 8)
+(syn-write) wait for child 10 of 10 returned 9 (expected 9)
+(syn-write) open "stuff"
+(syn-write) read "stuff"
+(syn-write) end
+syn-write: exit(0)
+Execution of 'syn-write' complete.
+Timer: 137 ticks
+Thread: 30 idle ticks, 92 kernel ticks, 15 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 506 reads, 460 writes
+hd1:0: 213 reads, 0 writes
+Console: 2267 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

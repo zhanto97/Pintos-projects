@@ -1,0 +1,28 @@
+Copying tests/userprog/read-bad-fd into /tmp/blkkjgfEod.dsk...
+Writing command line to /tmp/kqGHBMJpPe.dsk...
+qemu -hda /tmp/kqGHBMJpPe.dsk -hdb /tmp/JSv1QRq29Q.dsk -hdc /tmp/blkkjgfEod.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put read-bad-fd run read-bad-fd
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 137 sector (68 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 97 sector (48 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Putting 'read-bad-fd' into the file system...
+Executing 'read-bad-fd':
+(read-bad-fd) begin
+(read-bad-fd) end
+read-bad-fd: exit(0)
+Execution of 'read-bad-fd' complete.
+Timer: 84 ticks
+Thread: 30 idle ticks, 53 kernel ticks, 1 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 59 reads, 202 writes
+hd1:0: 97 reads, 0 writes
+Console: 812 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

@@ -1,0 +1,29 @@
+Writing command line to /tmp/WPjtVqO9VM.dsk...
+warning: can't find squish-pty, so terminal input will fail
+bochs -q
+Kernel command line: -q run priority-donate-nest
+Pintos booting with 4,096 kB RAM...
+375 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  204,600 loops/s.
+Boot complete.
+Executing 'priority-donate-nest':
+(priority-donate-nest) begin
+(priority-donate-nest) Low thread should have priority 32.  Actual priority: 31.
+(priority-donate-nest) Low thread should have priority 33.  Actual priority: 31.
+(priority-donate-nest) Medium thread should have priority 33.  Actual priority: 32.
+(priority-donate-nest) Medium thread got the lock.
+(priority-donate-nest) Medium thread should just have finished.
+(priority-donate-nest) Low thread should have priority 31.  Actual priority: 31.
+(priority-donate-nest) end
+Execution of 'priority-donate-nest' complete.
+Timer: 101 ticks
+Thread: 0 idle ticks, 104 kernel ticks, 0 user ticks
+Console: 857 characters output
+Keyboard: 0 keys pressed
+Powering off...
+========================================================================
+                       Bochs x86 Emulator 2.6.2
+                Built from SVN snapshot on May 26, 2013
+                  Compiled on Mar 29 2019 at 21:25:51
+========================================================================

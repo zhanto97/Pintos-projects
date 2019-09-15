@@ -1,0 +1,41 @@
+Writing command line to /tmp/wS8UdlJIOh.dsk...
+warning: can't find squish-pty, so terminal input will fail
+bochs -q
+Kernel command line: -q run priority-fifo
+Pintos booting with 4,096 kB RAM...
+375 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  204,600 loops/s.
+Boot complete.
+Executing 'priority-fifo':
+(priority-fifo) begin
+(priority-fifo) 16 threads will iterate 16 times in the same order each time.
+(priority-fifo) If the order varies then there is a bug.
+(priority-fifo) iteration: 0 1 0 1 2 3 0 1 2 3 4 5 0 1 2 3
+(priority-fifo) iteration: 4 5 6 7 0 1 2 3 4 5 6 7 8 9 0 1
+(priority-fifo) iteration: 2 3 4 5 6 7 8 9 10 0 1 2 3 4 5 6
+(priority-fifo) iteration: 7 8 9 10 11 12 0 1 2 3 4 5 6 7 8 9
+(priority-fifo) iteration: 10 11 12 13 14 0 1 2 3 4 5 6 7 8 9 10
+(priority-fifo) iteration: 11 12 13 14 15 0 1 2 3 4 5 6 7 8 9 10
+(priority-fifo) iteration: 11 12 13 14 15 0 1 2 3 4 5 6 7 8 9 10
+(priority-fifo) iteration: 11 12 13 14 15 0 1 2 3 4 5 6 7 8 9 10
+(priority-fifo) iteration: 11 12 13 14 15 0 1 2 3 4 5 6 7 8 9 10
+(priority-fifo) iteration: 11 12 13 14 15 0 1 2 3 4 5 6 7 8 9 10
+(priority-fifo) iteration: 11 12 13 14 15 0 1 2 3 4 5 6 7 8 9 10
+(priority-fifo) iteration: 11 12 13 14 15 0 1 2 3 4 5 6 7 8 9 10
+(priority-fifo) iteration: 11 12 13 14 15 2 3 4 5 6 7 8 9 10 11 12
+(priority-fifo) iteration: 13 14 15 4 5 6 7 8 9 10 11 12 13 14 15 6
+(priority-fifo) iteration: 7 8 9 10 11 12 13 14 15 8 9 10 11 12 13 14
+(priority-fifo) iteration: 15 10 11 12 13 14 15 11 12 13 14 15 13 14 15 15
+(priority-fifo) end
+Execution of 'priority-fifo' complete.
+Timer: 279 ticks
+Thread: 0 idle ticks, 282 kernel ticks, 0 user ticks
+Console: 1555 characters output
+Keyboard: 0 keys pressed
+Powering off...
+========================================================================
+                       Bochs x86 Emulator 2.6.2
+                Built from SVN snapshot on May 26, 2013
+                  Compiled on Mar 29 2019 at 21:25:51
+========================================================================

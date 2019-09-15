@@ -1,0 +1,37 @@
+Copying tests/filesys/base/syn-remove into /tmp/dQUF_d4jk3.dsk...
+Writing command line to /tmp/dQbg3FpHRu.dsk...
+qemu -hda /tmp/dQbg3FpHRu.dsk -hdb /tmp/bvRwPgpPqH.dsk -hdc /tmp/dQUF_d4jk3.dsk -hdd /tmp/PYwqxb4k1d.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put syn-remove run syn-remove
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+373 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 102 sector (51 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Putting 'syn-remove' into the file system...
+Executing 'syn-remove':
+(syn-remove) begin
+(syn-remove) create "deleteme"
+(syn-remove) open "deleteme"
+(syn-remove) remove "deleteme"
+(syn-remove) write "deleteme"
+(syn-remove) seek "deleteme" to 0
+(syn-remove) read "deleteme"
+(syn-remove) close "deleteme"
+(syn-remove) end
+syn-remove: exit(0)
+Execution of 'syn-remove' complete.
+Timer: 88 ticks
+Thread: 30 idle ticks, 53 kernel ticks, 5 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 97 reads, 225 writes
+hd1:0: 102 reads, 0 writes
+hd1:1: 0 reads, 0 writes
+Console: 1127 characters output
+Keyboard: 0 keys pressed
+Exception: 5 page faults
+Powering off...

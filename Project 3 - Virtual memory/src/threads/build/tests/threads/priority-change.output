@@ -1,0 +1,26 @@
+Writing command line to /tmp/T9qz9oZ07o.dsk...
+warning: can't find squish-pty, so terminal input will fail
+bochs -q
+Kernel command line: -q run priority-change
+Pintos booting with 4,096 kB RAM...
+375 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  204,600 loops/s.
+Boot complete.
+Executing 'priority-change':
+(priority-change) begin
+(priority-change) Creating a high-priority thread 2.
+(priority-change) Thread 2 should have just lowered its priority.
+(priority-change) Thread 2 should have just exited.
+(priority-change) end
+Execution of 'priority-change' complete.
+Timer: 60 ticks
+Thread: 0 idle ticks, 62 kernel ticks, 0 user ticks
+Console: 559 characters output
+Keyboard: 0 keys pressed
+Powering off...
+========================================================================
+                       Bochs x86 Emulator 2.6.2
+                Built from SVN snapshot on May 26, 2013
+                  Compiled on Mar 29 2019 at 21:25:51
+========================================================================

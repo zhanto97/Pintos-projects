@@ -1,0 +1,37 @@
+Writing command line to /tmp/vZQWTld7Jv.dsk...
+warning: can't find squish-pty, so terminal input will fail
+bochs -q
+Kernel command line: -q run priority-donate-chain
+Pintos booting with 4,096 kB RAM...
+375 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  204,600 loops/s.
+Boot complete.
+Executing 'priority-donate-chain':
+(priority-donate-chain) begin
+(priority-donate-chain) main got lock.
+(priority-donate-chain) main should have priority 3.  Actual priority: 0.
+(priority-donate-chain) interloper 1 finished.
+(priority-donate-chain) main should have priority 6.  Actual priority: 0.
+(priority-donate-chain) main should have priority 9.  Actual priority: 0.
+(priority-donate-chain) interloper 2 finished.
+(priority-donate-chain) interloper 3 finished.
+(priority-donate-chain) main should have priority 12.  Actual priority: 0.
+(priority-donate-chain) main should have priority 15.  Actual priority: 0.
+(priority-donate-chain) interloper 4 finished.
+(priority-donate-chain) interloper 5 finished.
+(priority-donate-chain) main should have priority 18.  Actual priority: 0.
+(priority-donate-chain) main should have priority 21.  Actual priority: 0.
+(priority-donate-chain) main finishing with priority 0.
+(priority-donate-chain) end
+Execution of 'priority-donate-chain' complete.
+Timer: 180 ticks
+Thread: 0 idle ticks, 183 kernel ticks, 0 user ticks
+Console: 1272 characters output
+Keyboard: 0 keys pressed
+Powering off...
+========================================================================
+                       Bochs x86 Emulator 2.6.2
+                Built from SVN snapshot on May 26, 2013
+                  Compiled on Mar 29 2019 at 21:25:51
+========================================================================

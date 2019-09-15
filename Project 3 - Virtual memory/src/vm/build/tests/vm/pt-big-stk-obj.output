@@ -1,0 +1,31 @@
+Copying tests/vm/pt-big-stk-obj into /tmp/ii1Ine0p77.dsk...
+Writing command line to /tmp/mTgiP36_z2.dsk...
+qemu -hda /tmp/mTgiP36_z2.dsk -hdb /tmp/xMYTBsonIO.dsk -hdc /tmp/ii1Ine0p77.dsk -hdd /tmp/6fH2NevpbR.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put pt-big-stk-obj run pt-big-stk-obj
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+373 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 106 sector (53 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Putting 'pt-big-stk-obj' into the file system...
+Executing 'pt-big-stk-obj':
+(pt-big-stk-obj) begin
+(pt-big-stk-obj) cksum: 3256410166
+(pt-big-stk-obj) end
+pt-big-stk-obj: exit(0)
+Execution of 'pt-big-stk-obj' complete.
+Timer: 84 ticks
+Thread: 30 idle ticks, 52 kernel ticks, 2 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 61 reads, 220 writes
+hd1:0: 106 reads, 0 writes
+hd1:1: 0 reads, 0 writes
+Console: 980 characters output
+Keyboard: 0 keys pressed
+Exception: 20 page faults
+Powering off...

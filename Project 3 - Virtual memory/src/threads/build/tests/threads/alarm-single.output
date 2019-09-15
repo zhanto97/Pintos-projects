@@ -1,0 +1,33 @@
+Writing command line to /tmp/8mwxqSg2xg.dsk...
+warning: can't find squish-pty, so terminal input will fail
+bochs -q
+Kernel command line: -q run alarm-single
+Pintos booting with 4,096 kB RAM...
+375 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  204,600 loops/s.
+Boot complete.
+Executing 'alarm-single':
+(alarm-single) begin
+(alarm-single) Creating 5 threads to sleep 1 times each.
+(alarm-single) Thread 0 sleeps 10 ticks each time,
+(alarm-single) thread 1 sleeps 20 ticks each time, and so on.
+(alarm-single) If successful, product of iteration count and
+(alarm-single) sleep duration will appear in nondescending order.
+(alarm-single) thread 0: duration=10, iteration=1, product=10
+(alarm-single) thread 1: duration=20, iteration=1, product=20
+(alarm-single) thread 2: duration=30, iteration=1, product=30
+(alarm-single) thread 3: duration=40, iteration=1, product=40
+(alarm-single) thread 4: duration=50, iteration=1, product=50
+(alarm-single) end
+Execution of 'alarm-single' complete.
+Timer: 377 ticks
+Thread: 250 idle ticks, 130 kernel ticks, 0 user ticks
+Console: 984 characters output
+Keyboard: 0 keys pressed
+Powering off...
+========================================================================
+                       Bochs x86 Emulator 2.6.2
+                Built from SVN snapshot on May 26, 2013
+                  Compiled on Mar 29 2019 at 21:25:51
+========================================================================

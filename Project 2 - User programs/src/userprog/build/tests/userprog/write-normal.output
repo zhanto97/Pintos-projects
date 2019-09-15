@@ -1,0 +1,32 @@
+Copying tests/userprog/write-normal into /tmp/Na11bjjI8i.dsk...
+Copying ../../tests/userprog/sample.txt into /tmp/Na11bjjI8i.dsk...
+Writing command line to /tmp/S0p8C2hjD6.dsk...
+qemu -hda /tmp/S0p8C2hjD6.dsk -hdb /tmp/8ZZB_2gcz4.dsk -hdc /tmp/Na11bjjI8i.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put write-normal put sample.txt run write-normal
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  208,281,600 loops/s.
+hd0:0: detected 137 sector (68 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 100 sector (50 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Putting 'write-normal' into the file system...
+Putting 'sample.txt' into the file system...
+Executing 'write-normal':
+(write-normal) begin
+(write-normal) create "test.txt"
+(write-normal) open "test.txt"
+(write-normal) end
+write-normal: exit(0)
+Execution of 'write-normal' complete.
+Timer: 90 ticks
+Thread: 30 idle ticks, 57 kernel ticks, 3 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 123 reads, 216 writes
+hd1:0: 100 reads, 0 writes
+Console: 947 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

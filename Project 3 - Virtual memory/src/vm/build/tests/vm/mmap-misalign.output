@@ -1,0 +1,34 @@
+Copying tests/vm/mmap-misalign into /tmp/CKl5rAJYHg.dsk...
+Copying ../../tests/vm/sample.txt into /tmp/CKl5rAJYHg.dsk...
+Writing command line to /tmp/jjA3JjmBXV.dsk...
+qemu -hda /tmp/jjA3JjmBXV.dsk -hdb /tmp/3Hb59nYaTs.dsk -hdc /tmp/CKl5rAJYHg.dsk -hdd /tmp/K_zPB07pbr.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put mmap-misalign put sample.txt run mmap-misalign
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+373 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 100 sector (50 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Putting 'mmap-misalign' into the file system...
+Putting 'sample.txt' into the file system...
+Executing 'mmap-misalign':
+(mmap-misalign) begin
+(mmap-misalign) open "sample.txt"
+(mmap-misalign) try to mmap at misaligned address
+(mmap-misalign) end
+mmap-misalign: exit(0)
+Execution of 'mmap-misalign' complete.
+Timer: 85 ticks
+Thread: 30 idle ticks, 54 kernel ticks, 1 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 90 reads, 210 writes
+hd1:0: 100 reads, 0 writes
+hd1:1: 0 reads, 0 writes
+Console: 1081 characters output
+Keyboard: 0 keys pressed
+Exception: 5 page faults
+Powering off...

@@ -1,0 +1,36 @@
+Writing command line to /tmp/RAGNyBub6L.dsk...
+warning: can't find squish-pty, so terminal input will fail
+bochs -q
+Kernel command line: -q -mlfqs run mlfqs-nice-10
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  204,600 loops/s.
+Boot complete.
+Executing 'mlfqs-nice-10':
+(mlfqs-nice-10) begin
+(mlfqs-nice-10) Starting 10 threads...
+(mlfqs-nice-10) Starting threads took 29 ticks.
+(mlfqs-nice-10) Sleeping 40 seconds to let threads run, please wait...
+(mlfqs-nice-10) Thread 0 received 693 ticks.
+(mlfqs-nice-10) Thread 1 received 585 ticks.
+(mlfqs-nice-10) Thread 2 received 489 ticks.
+(mlfqs-nice-10) Thread 3 received 401 ticks.
+(mlfqs-nice-10) Thread 4 received 313 ticks.
+(mlfqs-nice-10) Thread 5 received 224 ticks.
+(mlfqs-nice-10) Thread 6 received 153 ticks.
+(mlfqs-nice-10) Thread 7 received 92 ticks.
+(mlfqs-nice-10) Thread 8 received 44 ticks.
+(mlfqs-nice-10) Thread 9 received 13 ticks.
+(mlfqs-nice-10) end
+Execution of 'mlfqs-nice-10' complete.
+Timer: 4148 ticks
+Thread: 990 idle ticks, 3161 kernel ticks, 0 user ticks
+Console: 996 characters output
+Keyboard: 0 keys pressed
+Powering off...
+========================================================================
+                       Bochs x86 Emulator 2.6.2
+                Built from SVN snapshot on May 26, 2013
+                  Compiled on Mar  7 2019 at 23:31:29
+========================================================================

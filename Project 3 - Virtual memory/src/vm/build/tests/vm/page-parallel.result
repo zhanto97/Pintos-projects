@@ -1,0 +1,2 @@
+FAIL
+run: byte 0 != 0: FAILED

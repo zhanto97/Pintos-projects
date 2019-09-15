@@ -1,0 +1,30 @@
+Writing command line to /tmp/TAmTLMa6aq.dsk...
+warning: can't find squish-pty, so terminal input will fail
+bochs -q
+Kernel command line: -q run priority-preempt
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  204,600 loops/s.
+Boot complete.
+Executing 'priority-preempt':
+(priority-preempt) begin
+(priority-preempt) Thread high-priority iteration 0
+(priority-preempt) Thread high-priority iteration 1
+(priority-preempt) Thread high-priority iteration 2
+(priority-preempt) Thread high-priority iteration 3
+(priority-preempt) Thread high-priority iteration 4
+(priority-preempt) Thread high-priority done!
+(priority-preempt) The high-priority thread should have already completed.
+(priority-preempt) end
+Execution of 'priority-preempt' complete.
+Timer: 89 ticks
+Thread: 0 idle ticks, 92 kernel ticks, 0 user ticks
+Console: 774 characters output
+Keyboard: 0 keys pressed
+Powering off...
+========================================================================
+                       Bochs x86 Emulator 2.6.2
+                Built from SVN snapshot on May 26, 2013
+                  Compiled on Mar  7 2019 at 23:31:29
+========================================================================

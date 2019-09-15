@@ -1,0 +1,29 @@
+Copying tests/userprog/create-long into /tmp/F2kDQtmIgn.dsk...
+Writing command line to /tmp/72KLADQ2T4.dsk...
+qemu -hda /tmp/72KLADQ2T4.dsk -hdb /tmp/M31jgZYuHU.dsk -hdc /tmp/F2kDQtmIgn.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put create-long run create-long
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 137 sector (68 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 97 sector (48 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Putting 'create-long' into the file system...
+Executing 'create-long':
+(create-long) begin
+(create-long) create("x..."): 0
+(create-long) end
+create-long: exit(0)
+Execution of 'create-long' complete.
+Timer: 80 ticks
+Thread: 30 idle ticks, 49 kernel ticks, 1 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 63 reads, 206 writes
+hd1:0: 97 reads, 0 writes
+Console: 844 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

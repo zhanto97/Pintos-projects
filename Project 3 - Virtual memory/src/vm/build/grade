@@ -1,0 +1,340 @@
+TOTAL TESTING SCORE: 96.8%
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+SUMMARY BY TEST SET
+
+Test Set                                      Pts Max  % Ttl  % Max
+--------------------------------------------- --- --- ------ ------
+tests/vm/Rubric.functionality                  52/ 55  47.3%/ 50.0%
+tests/vm/Rubric.robustness                     28/ 28  15.0%/ 15.0%
+tests/userprog/Rubric.functionality           103/108   9.5%/ 10.0%
+tests/userprog/Rubric.robustness               88/ 88   5.0%/  5.0%
+tests/filesys/base/Rubric                      30/ 30  20.0%/ 20.0%
+--------------------------------------------- --- --- ------ ------
+Total                                                  96.8%/100.0%
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+SUMMARY OF INDIVIDUAL TESTS
+
+Functionality of virtual memory subsystem (tests/vm/Rubric.functionality):
+	- Test stack growth.
+	     3/ 3 tests/vm/pt-grow-stack
+	     3/ 3 tests/vm/pt-grow-stk-sc
+	     3/ 3 tests/vm/pt-big-stk-obj
+	     3/ 3 tests/vm/pt-grow-pusha
+
+	- Test paging behavior.
+	     3/ 3 tests/vm/page-linear
+	  ** 0/ 3 tests/vm/page-parallel
+	     3/ 3 tests/vm/page-shuffle
+	     4/ 4 tests/vm/page-merge-seq
+	     4/ 4 tests/vm/page-merge-par
+	     4/ 4 tests/vm/page-merge-mm
+	     4/ 4 tests/vm/page-merge-stk
+
+	- Test "mmap" system call.
+	     2/ 2 tests/vm/mmap-read
+	     2/ 2 tests/vm/mmap-write
+	     2/ 2 tests/vm/mmap-shuffle
+
+	     2/ 2 tests/vm/mmap-twice
+
+	     2/ 2 tests/vm/mmap-unmap
+	     1/ 1 tests/vm/mmap-exit
+
+	     3/ 3 tests/vm/mmap-clean
+
+	     2/ 2 tests/vm/mmap-close
+	     2/ 2 tests/vm/mmap-remove
+
+	- Section summary.
+	     19/ 20 tests passed
+	     52/ 55 points subtotal
+
+Robustness of virtual memory subsystem (tests/vm/Rubric.robustness):
+	- Test robustness of page table support.
+	     2/ 2 tests/vm/pt-bad-addr
+	     3/ 3 tests/vm/pt-bad-read
+	     2/ 2 tests/vm/pt-write-code
+	     3/ 3 tests/vm/pt-write-code2
+	     4/ 4 tests/vm/pt-grow-bad
+
+	- Test robustness of "mmap" system call.
+	     1/ 1 tests/vm/mmap-bad-fd
+	     1/ 1 tests/vm/mmap-inherit
+	     1/ 1 tests/vm/mmap-null
+	     1/ 1 tests/vm/mmap-zero
+
+	     2/ 2 tests/vm/mmap-misalign
+
+	     2/ 2 tests/vm/mmap-over-code
+	     2/ 2 tests/vm/mmap-over-data
+	     2/ 2 tests/vm/mmap-over-stk
+	     2/ 2 tests/vm/mmap-overlap
+
+
+	- Section summary.
+	     14/ 14 tests passed
+	     28/ 28 points subtotal
+
+Functionality of system calls (tests/userprog/Rubric.functionality):
+	- Test argument passing on Pintos command line.
+	     3/ 3 tests/userprog/args-none
+	     3/ 3 tests/userprog/args-single
+	     3/ 3 tests/userprog/args-multiple
+	     3/ 3 tests/userprog/args-many
+	     3/ 3 tests/userprog/args-dbl-space
+
+	- Test "create" system call.
+	     3/ 3 tests/userprog/create-empty
+	     3/ 3 tests/userprog/create-long
+	     3/ 3 tests/userprog/create-normal
+	     3/ 3 tests/userprog/create-exists
+
+	- Test "open" system call.
+	     3/ 3 tests/userprog/open-missing
+	     3/ 3 tests/userprog/open-normal
+	     3/ 3 tests/userprog/open-twice
+
+	- Test "read" system call.
+	     3/ 3 tests/userprog/read-normal
+	     3/ 3 tests/userprog/read-zero
+
+	- Test "write" system call.
+	     3/ 3 tests/userprog/write-normal
+	     3/ 3 tests/userprog/write-zero
+
+	- Test "close" system call.
+	     3/ 3 tests/userprog/close-normal
+
+	- Test "exec" system call.
+	     5/ 5 tests/userprog/exec-once
+	  ** 0/ 5 tests/userprog/exec-multiple
+	     5/ 5 tests/userprog/exec-arg
+
+	- Test "wait" system call.
+	     5/ 5 tests/userprog/wait-simple
+	     5/ 5 tests/userprog/wait-twice
+
+	- Test "exit" system call.
+	     5/ 5 tests/userprog/exit
+
+	- Test "halt" system call.
+	     3/ 3 tests/userprog/halt
+
+	- Test recursive execution of user programs.
+	    15/15 tests/userprog/multi-recurse
+
+	- Test read-only executable feature.
+	     3/ 3 tests/userprog/rox-simple
+	     3/ 3 tests/userprog/rox-child
+	     3/ 3 tests/userprog/rox-multichild
+
+	- Section summary.
+	     27/ 28 tests passed
+	    103/108 points subtotal
+
+Robustness of system calls (tests/userprog/Rubric.robustness):
+	- Test robustness of file descriptor handling.
+	     2/ 2 tests/userprog/close-stdin
+	     2/ 2 tests/userprog/close-stdout
+	     2/ 2 tests/userprog/close-bad-fd
+	     2/ 2 tests/userprog/close-twice
+	     2/ 2 tests/userprog/read-bad-fd
+	     2/ 2 tests/userprog/read-stdout
+	     2/ 2 tests/userprog/write-bad-fd
+	     2/ 2 tests/userprog/write-stdin
+	     2/ 2 tests/userprog/multi-child-fd
+
+	- Test robustness of pointer handling.
+	     3/ 3 tests/userprog/create-bad-ptr
+	     3/ 3 tests/userprog/exec-bad-ptr
+	     3/ 3 tests/userprog/open-bad-ptr
+	     3/ 3 tests/userprog/read-bad-ptr
+	     3/ 3 tests/userprog/write-bad-ptr
+
+	- Test robustness of buffer copying across page boundaries.
+	     3/ 3 tests/userprog/create-bound
+	     3/ 3 tests/userprog/open-boundary
+	     3/ 3 tests/userprog/read-boundary
+	     3/ 3 tests/userprog/write-boundary
+
+	- Test handling of null pointer and empty strings.
+	     2/ 2 tests/userprog/create-null
+	     2/ 2 tests/userprog/open-null
+	     2/ 2 tests/userprog/open-empty
+
+	- Test robustness of system call implementation.
+	     3/ 3 tests/userprog/sc-bad-arg
+	     3/ 3 tests/userprog/sc-bad-sp
+	     5/ 5 tests/userprog/sc-boundary
+	     5/ 5 tests/userprog/sc-boundary-2
+
+	- Test robustness of "exec" and "wait" system calls.
+	     5/ 5 tests/userprog/exec-missing
+	     5/ 5 tests/userprog/wait-bad-pid
+	     5/ 5 tests/userprog/wait-killed
+
+	- Test robustness of exception handling.
+	     1/ 1 tests/userprog/bad-read
+	     1/ 1 tests/userprog/bad-write
+	     1/ 1 tests/userprog/bad-jump
+	     1/ 1 tests/userprog/bad-read2
+	     1/ 1 tests/userprog/bad-write2
+	     1/ 1 tests/userprog/bad-jump2
+
+	- Section summary.
+	     34/ 34 tests passed
+	     88/ 88 points subtotal
+
+Functionality of base file system (tests/filesys/base/Rubric):
+	- Test basic support for small files.
+	     1/ 1 tests/filesys/base/sm-create
+	     2/ 2 tests/filesys/base/sm-full
+	     2/ 2 tests/filesys/base/sm-random
+	     2/ 2 tests/filesys/base/sm-seq-block
+	     3/ 3 tests/filesys/base/sm-seq-random
+
+	- Test basic support for large files.
+	     1/ 1 tests/filesys/base/lg-create
+	     2/ 2 tests/filesys/base/lg-full
+	     2/ 2 tests/filesys/base/lg-random
+	     2/ 2 tests/filesys/base/lg-seq-block
+	     3/ 3 tests/filesys/base/lg-seq-random
+
+	- Test synchronized multiprogram access to files.
+	     4/ 4 tests/filesys/base/syn-read
+	     4/ 4 tests/filesys/base/syn-write
+	     2/ 2 tests/filesys/base/syn-remove
+
+	- Section summary.
+	     13/ 13 tests passed
+	     30/ 30 points subtotal
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+DETAILS OF tests/vm/page-parallel FAILURE:
+
+run: byte 0 != 0: FAILED
+
+OUTPUT FROM tests/vm/page-parallel:
+
+Copying tests/vm/page-parallel into /tmp/Yt4SX_a2gf.dsk...
+Copying tests/vm/child-linear into /tmp/Yt4SX_a2gf.dsk...
+Writing command line to /tmp/xmjn5PpjLx.dsk...
+qemu -hda /tmp/xmjn5PpjLx.dsk -hdb /tmp/RBr7wC1AKU.dsk -hdc /tmp/Yt4SX_a2gf.dsk -hdd /tmp/nzhvP7BZ61.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put page-parallel put child-linear run page-parallel
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+373 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 198 sector (99 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Putting 'page-parallel' into the file system...
+Putting 'child-linear' into the file system...
+Executing 'page-parallel':
+(page-parallel) begin
+(page-parallel) exec "child-linear"
+(page-parallel) exec "child-linear"
+(page-parallel) exec "child-linear"
+child-linear: exit(66)
+(page-parallel) exec "child-linear"
+(page-parallel) wait for child 0
+(page-parallel) wait for child 1
+child-linear: exit(66)
+(page-parallel) wait for child 2
+(child-linear) byte 0 != 0: FAILED
+child-linear: exit(1)
+(child-linear) byte 833452 != 0: FAILED
+child-linear: exit(1)
+(page-parallel) wait for child 2: FAILED
+page-parallel: exit(1)
+Execution of 'page-parallel' complete.
+Timer: 1349 ticks
+Thread: 30 idle ticks, 83 kernel ticks, 1237 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 219 reads, 406 writes
+hd1:0: 198 reads, 0 writes
+hd1:1: 5304 reads, 7216 writes
+Console: 1442 characters output
+Keyboard: 0 keys pressed
+Exception: 1706 page faults
+Powering off...
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+DETAILS OF tests/userprog/exec-multiple FAILURE:
+
+Test output failed to match any acceptable form.
+
+Acceptable output:
+  (exec-multiple) begin
+  (child-simple) run
+  child-simple: exit(81)
+  (child-simple) run
+  child-simple: exit(81)
+  (child-simple) run
+  child-simple: exit(81)
+  (child-simple) run
+  child-simple: exit(81)
+  (exec-multiple) end
+  exec-multiple: exit(0)
+Differences in `diff -u' format:
+  (exec-multiple) begin
+  (child-simple) run
+  child-simple: exit(81)
+- (child-simple) run
+  child-simple: exit(81)
+- (child-simple) run
+  child-simple: exit(81)
+- (child-simple) run
+  child-simple: exit(81)
+  (exec-multiple) end
+  exec-multiple: exit(0)
+
+OUTPUT FROM tests/userprog/exec-multiple:
+
+Copying tests/userprog/exec-multiple into /tmp/tA5_iJ360y.dsk...
+Copying tests/userprog/child-simple into /tmp/tA5_iJ360y.dsk...
+Writing command line to /tmp/NmrMXJl8Rk.dsk...
+qemu -hda /tmp/NmrMXJl8Rk.dsk -hdb /tmp/bljR47x3bg.dsk -hdc /tmp/tA5_iJ360y.dsk -hdd /tmp/37o17nzcfL.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put exec-multiple put child-simple run exec-multiple
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+373 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 193 sector (96 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Putting 'exec-multiple' into the file system...
+Putting 'child-simple' into the file system...
+Executing 'exec-multiple':
+(exec-multiple) begin
+(child-simple) run
+child-simple: exit(81)
+child-simple: exit(81)
+child-simple: exit(81)
+child-simple: exit(81)
+(exec-multiple) end
+exec-multiple: exit(0)
+Execution of 'exec-multiple' complete.
+Timer: 108 ticks
+Thread: 30 idle ticks, 75 kernel ticks, 3 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 206 reads, 396 writes
+hd1:0: 193 reads, 0 writes
+hd1:1: 0 reads, 0 writes
+Console: 1114 characters output
+Keyboard: 0 keys pressed
+Exception: 18 page faults
+Powering off...

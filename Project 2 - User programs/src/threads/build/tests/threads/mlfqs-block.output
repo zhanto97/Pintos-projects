@@ -1,0 +1,30 @@
+Writing command line to /tmp/gX8uhdLQy3.dsk...
+warning: can't find squish-pty, so terminal input will fail
+bochs -q
+Kernel command line: -q -mlfqs run mlfqs-block
+Pintos booting with 4,096 kB RAM...
+375 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  204,600 loops/s.
+Boot complete.
+Executing 'mlfqs-block':
+(mlfqs-block) begin
+(mlfqs-block) Main thread acquiring lock.
+(mlfqs-block) Main thread creating block thread, sleeping 25 seconds...
+(mlfqs-block) Block thread spinning for 20 seconds...
+(mlfqs-block) Block thread acquiring lock...
+(mlfqs-block) Main thread spinning for 5 seconds...
+(mlfqs-block) Main thread releasing lock.
+(mlfqs-block) Block thread should have already acquired lock.
+(mlfqs-block) end
+Execution of 'mlfqs-block' complete.
+Timer: 3069 ticks
+Thread: 487 idle ticks, 2585 kernel ticks, 0 user ticks
+Console: 750 characters output
+Keyboard: 0 keys pressed
+Powering off...
+========================================================================
+                       Bochs x86 Emulator 2.6.2
+                Built from SVN snapshot on May 26, 2013
+                  Compiled on Mar 29 2019 at 21:25:51
+========================================================================

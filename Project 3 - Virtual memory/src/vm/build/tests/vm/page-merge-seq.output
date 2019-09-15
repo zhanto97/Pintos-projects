@@ -1,0 +1,68 @@
+Copying tests/vm/page-merge-seq into /tmp/iskKOez3Dh.dsk...
+Copying tests/vm/child-sort into /tmp/iskKOez3Dh.dsk...
+Writing command line to /tmp/OLImbj1NWl.dsk...
+qemu -hda /tmp/OLImbj1NWl.dsk -hdb /tmp/FRP16E_gab.dsk -hdc /tmp/iskKOez3Dh.dsk -hdd /tmp/UboapiiAsP.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put page-merge-seq put child-sort run page-merge-seq
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+373 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 204 sector (102 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Putting 'page-merge-seq' into the file system...
+Putting 'child-sort' into the file system...
+Executing 'page-merge-seq':
+(page-merge-seq) begin
+(page-merge-seq) init
+(page-merge-seq) sort chunk 0
+child-sort: exit(123)
+(page-merge-seq) sort chunk 1
+child-sort: exit(123)
+(page-merge-seq) sort chunk 2
+child-sort: exit(123)
+(page-merge-seq) sort chunk 3
+child-sort: exit(123)
+(page-merge-seq) sort chunk 4
+child-sort: exit(123)
+(page-merge-seq) sort chunk 5
+child-sort: exit(123)
+(page-merge-seq) sort chunk 6
+child-sort: exit(123)
+(page-merge-seq) sort chunk 7
+child-sort: exit(123)
+(page-merge-seq) sort chunk 8
+child-sort: exit(123)
+(page-merge-seq) sort chunk 9
+child-sort: exit(123)
+(page-merge-seq) sort chunk 10
+child-sort: exit(123)
+(page-merge-seq) sort chunk 11
+child-sort: exit(123)
+(page-merge-seq) sort chunk 12
+child-sort: exit(123)
+(page-merge-seq) sort chunk 13
+child-sort: exit(123)
+(page-merge-seq) sort chunk 14
+child-sort: exit(123)
+(page-merge-seq) sort chunk 15
+child-sort: exit(123)
+(page-merge-seq) merge
+(page-merge-seq) verify
+(page-merge-seq) success, buf_idx=1,032,192
+(page-merge-seq) end
+page-merge-seq: exit(0)
+Execution of 'page-merge-seq' complete.
+Timer: 3180 ticks
+Thread: 30 idle ticks, 83 kernel ticks, 3067 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 4863 reads, 4580 writes
+hd1:0: 204 reads, 0 writes
+hd1:1: 5520 reads, 6608 writes
+Console: 1971 characters output
+Keyboard: 0 keys pressed
+Exception: 1246 page faults
+Powering off...

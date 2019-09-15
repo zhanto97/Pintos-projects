@@ -1,0 +1,36 @@
+Copying tests/vm/pt-grow-stk-sc into /tmp/hhapgi4ByN.dsk...
+Writing command line to /tmp/VzVeRABjG6.dsk...
+qemu -hda /tmp/VzVeRABjG6.dsk -hdb /tmp/xZTo2ikfpy.dsk -hdc /tmp/hhapgi4ByN.dsk -hdd /tmp/DQNLXpMeAE.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put pt-grow-stk-sc run pt-grow-stk-sc
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+373 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 100 sector (50 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Putting 'pt-grow-stk-sc' into the file system...
+Executing 'pt-grow-stk-sc':
+(pt-grow-stk-sc) begin
+(pt-grow-stk-sc) create "sample.txt"
+(pt-grow-stk-sc) open "sample.txt"
+(pt-grow-stk-sc) write "sample.txt"
+(pt-grow-stk-sc) 2nd open "sample.txt"
+(pt-grow-stk-sc) read "sample.txt"
+(pt-grow-stk-sc) compare written data against read data
+(pt-grow-stk-sc) end
+pt-grow-stk-sc: exit(0)
+Execution of 'pt-grow-stk-sc' complete.
+Timer: 87 ticks
+Thread: 30 idle ticks, 53 kernel ticks, 4 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 102 reads, 216 writes
+hd1:0: 100 reads, 0 writes
+hd1:1: 0 reads, 0 writes
+Console: 1184 characters output
+Keyboard: 0 keys pressed
+Exception: 6 page faults
+Powering off...

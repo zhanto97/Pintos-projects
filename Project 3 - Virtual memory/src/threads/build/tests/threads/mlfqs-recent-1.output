@@ -1,0 +1,114 @@
+Writing command line to /tmp/sktgkod1BK.dsk...
+warning: can't find squish-pty, so terminal input will fail
+bochs -q
+Kernel command line: -q -mlfqs run mlfqs-recent-1
+Pintos booting with 4,096 kB RAM...
+375 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  204,600 loops/s.
+Boot complete.
+Executing 'mlfqs-recent-1':
+(mlfqs-recent-1) begin
+(mlfqs-recent-1) Sleeping 10 seconds to allow recent_cpu to decay, please wait...
+(mlfqs-recent-1) After 2 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 4 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 6 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 8 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 10 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 12 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 14 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 16 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 18 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 20 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 22 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 24 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 26 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 28 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 30 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 32 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 34 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 36 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 38 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 40 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 42 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 44 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 46 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 48 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 50 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 52 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 54 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 56 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 58 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 60 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 62 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 64 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 66 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 68 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 70 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 72 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 74 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 76 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 78 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 80 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 82 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 84 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 86 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 88 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 90 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 92 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 94 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 96 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 98 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 100 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 102 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 104 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 106 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 108 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 110 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 112 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 114 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 116 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 118 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 120 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 122 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 124 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 126 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 128 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 130 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 132 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 134 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 136 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 138 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 140 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 142 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 144 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 146 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 148 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 150 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 152 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 154 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 156 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 158 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 160 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 162 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 164 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 166 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 168 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 170 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 172 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 174 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 176 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 178 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) After 180 seconds, recent_cpu is 0.00, load_avg is 0.00.
+(mlfqs-recent-1) end
+Execution of 'mlfqs-recent-1' complete.
+Timer: 19019 ticks
+Thread: 964 idle ticks, 18058 kernel ticks, 0 user ticks
+Console: 7087 characters output
+Keyboard: 0 keys pressed
+Powering off...
+========================================================================
+                       Bochs x86 Emulator 2.6.2
+                Built from SVN snapshot on May 26, 2013
+                  Compiled on Mar 29 2019 at 21:25:51
+========================================================================

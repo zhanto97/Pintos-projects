@@ -1,0 +1,37 @@
+Copying tests/userprog/args-multiple into /tmp/Bk3_X_r_XE.dsk...
+Writing command line to /tmp/tKUTz1Urwd.dsk...
+qemu -hda /tmp/tKUTz1Urwd.dsk -hdb /tmp/hBMEMXgBXB.dsk -hdc /tmp/Bk3_X_r_XE.dsk -hdd /tmp/Hlai_6LSWd.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put args-multiple run 'args-multiple some arguments for you!'
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+373 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 96 sector (48 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Putting 'args-multiple' into the file system...
+Executing 'args-multiple some arguments for you!':
+(args) begin
+(args) argc = 5
+(args) argv[0] = 'args-multiple'
+(args) argv[1] = 'some'
+(args) argv[2] = 'arguments'
+(args) argv[3] = 'for'
+(args) argv[4] = 'you!'
+(args) argv[5] = null
+(args) end
+args-multiple: exit(0)
+Execution of 'args-multiple some arguments for you!' complete.
+Timer: 84 ticks
+Thread: 30 idle ticks, 52 kernel ticks, 2 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 59 reads, 200 writes
+hd1:0: 96 reads, 0 writes
+hd1:1: 0 reads, 0 writes
+Console: 1162 characters output
+Keyboard: 0 keys pressed
+Exception: 5 page faults
+Powering off...

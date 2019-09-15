@@ -1,0 +1,38 @@
+Copying tests/userprog/exec-multiple into /tmp/tDJSibQ8wc.dsk...
+Copying tests/userprog/child-simple into /tmp/tDJSibQ8wc.dsk...
+Writing command line to /tmp/ps1vFWKaai.dsk...
+qemu -hda /tmp/ps1vFWKaai.dsk -hdb /tmp/Pz1YkemW8D.dsk -hdc /tmp/tDJSibQ8wc.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put exec-multiple put child-simple run exec-multiple
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 137 sector (68 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 193 sector (96 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Putting 'exec-multiple' into the file system...
+Putting 'child-simple' into the file system...
+Executing 'exec-multiple':
+(exec-multiple) begin
+(child-simple) run
+child-simple: exit(81)
+(child-simple) run
+child-simple: exit(81)
+(child-simple) run
+child-simple: exit(81)
+(child-simple) run
+child-simple: exit(81)
+(exec-multiple) end
+exec-multiple: exit(0)
+Execution of 'exec-multiple' complete.
+Timer: 116 ticks
+Thread: 30 idle ticks, 83 kernel ticks, 3 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 230 reads, 396 writes
+hd1:0: 193 reads, 0 writes
+Console: 1064 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

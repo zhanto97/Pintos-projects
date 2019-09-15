@@ -1,0 +1,30 @@
+Copying tests/userprog/open-missing into /tmp/GGuN4F6HPU.dsk...
+Writing command line to /tmp/ws510HxUtz.dsk...
+qemu -hda /tmp/ws510HxUtz.dsk -hdb /tmp/TDxYDfTzGd.dsk -hdc /tmp/GGuN4F6HPU.dsk -hdd /tmp/dqS1gusKxZ.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put open-missing run open-missing
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+373 pages available in user pool.
+Calibrating timer...  157,081,600 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 97 sector (48 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Putting 'open-missing' into the file system...
+Executing 'open-missing':
+(open-missing) begin
+(open-missing) end
+open-missing: exit(0)
+Execution of 'open-missing' complete.
+Timer: 83 ticks
+Thread: 30 idle ticks, 52 kernel ticks, 1 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 76 reads, 202 writes
+hd1:0: 97 reads, 0 writes
+hd1:1: 0 reads, 0 writes
+Console: 927 characters output
+Keyboard: 0 keys pressed
+Exception: 5 page faults
+Powering off...

@@ -1,0 +1,9 @@
+Prototype mismatch: sub main::SIGVTALRM () vs none at /root/pintos/src/utils/pintos line 872.
+Constant subroutine SIGVTALRM redefined at /root/pintos/src/utils/pintos line 864.
+00000000000i[     ] reading configuration from bochsrc.txt
+00000000000i[     ] installing nogui module as the Bochs GUI
+00000000000i[     ] using log file bochsout.txt
+========================================================================
+Bochs is exiting with the following message:
+[UNMP ] Shutdown port: shutdown requested
+========================================================================

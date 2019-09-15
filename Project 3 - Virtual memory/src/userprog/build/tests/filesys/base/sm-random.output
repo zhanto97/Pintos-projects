@@ -1,0 +1,33 @@
+Copying tests/filesys/base/sm-random into /tmp/XCrLl3Ygba.dsk...
+Writing command line to /tmp/rFkq3cxodo.dsk...
+qemu -hda /tmp/rFkq3cxodo.dsk -hdb /tmp/7Sbxiqp9eo.dsk -hdc /tmp/XCrLl3Ygba.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put sm-random run sm-random
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 137 sector (68 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 103 sector (51 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Putting 'sm-random' into the file system...
+Executing 'sm-random':
+(sm-random) begin
+(sm-random) create "bazzle"
+(sm-random) open "bazzle"
+(sm-random) write "bazzle" in random order
+(sm-random) read "bazzle" in random order
+(sm-random) close "bazzle"
+(sm-random) end
+sm-random: exit(0)
+Execution of 'sm-random' complete.
+Timer: 107 ticks
+Thread: 30 idle ticks, 55 kernel ticks, 22 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 339 reads, 348 writes
+hd1:0: 103 reads, 0 writes
+Console: 967 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

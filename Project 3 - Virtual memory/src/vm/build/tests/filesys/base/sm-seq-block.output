@@ -1,0 +1,37 @@
+Copying tests/filesys/base/sm-seq-block into /tmp/CdLuMkD1uN.dsk...
+Writing command line to /tmp/dG8xUikDJM.dsk...
+qemu -hda /tmp/dG8xUikDJM.dsk -hdb /tmp/3WvlaixlfS.dsk -hdc /tmp/CdLuMkD1uN.dsk -hdd /tmp/lWgUK7ZUw9.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put sm-seq-block run sm-seq-block
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+373 pages available in user pool.
+Calibrating timer...  209,715,200 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 101 sector (50 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Putting 'sm-seq-block' into the file system...
+Executing 'sm-seq-block':
+(sm-seq-block) begin
+(sm-seq-block) create "noodle"
+(sm-seq-block) open "noodle"
+(sm-seq-block) writing "noodle"
+(sm-seq-block) close "noodle"
+(sm-seq-block) open "noodle" for verification
+(sm-seq-block) verified contents of "noodle"
+(sm-seq-block) close "noodle"
+(sm-seq-block) end
+sm-seq-block: exit(0)
+Execution of 'sm-seq-block' complete.
+Timer: 106 ticks
+Thread: 30 idle ticks, 64 kernel ticks, 12 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 124 reads, 249 writes
+hd1:0: 101 reads, 0 writes
+hd1:1: 0 reads, 0 writes
+Console: 1175 characters output
+Keyboard: 0 keys pressed
+Exception: 6 page faults
+Powering off...

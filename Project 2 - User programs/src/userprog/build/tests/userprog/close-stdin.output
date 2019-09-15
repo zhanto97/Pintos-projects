@@ -1,0 +1,28 @@
+Copying tests/userprog/close-stdin into /tmp/SdYwkvD7KM.dsk...
+Writing command line to /tmp/1zFLwtpjuI.dsk...
+qemu -hda /tmp/1zFLwtpjuI.dsk -hdb /tmp/3IMP9uf0wb.dsk -hdc /tmp/SdYwkvD7KM.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put close-stdin run close-stdin
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 137 sector (68 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 97 sector (48 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Putting 'close-stdin' into the file system...
+Executing 'close-stdin':
+(close-stdin) begin
+(close-stdin) end
+close-stdin: exit(0)
+Execution of 'close-stdin' complete.
+Timer: 84 ticks
+Thread: 30 idle ticks, 53 kernel ticks, 1 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 59 reads, 202 writes
+hd1:0: 97 reads, 0 writes
+Console: 812 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

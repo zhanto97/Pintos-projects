@@ -1,0 +1,35 @@
+Copying tests/filesys/base/syn-remove into /tmp/hS6JdrfBje.dsk...
+Writing command line to /tmp/0aOPrd3gNB.dsk...
+qemu -hda /tmp/0aOPrd3gNB.dsk -hdb /tmp/H5ExfH_GtH.dsk -hdc /tmp/hS6JdrfBje.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put syn-remove run syn-remove
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  209,510,400 loops/s.
+hd0:0: detected 137 sector (68 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 102 sector (51 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+Formatting file system...done.
+Boot complete.
+Putting 'syn-remove' into the file system...
+Executing 'syn-remove':
+(syn-remove) begin
+(syn-remove) create "deleteme"
+(syn-remove) open "deleteme"
+(syn-remove) remove "deleteme"
+(syn-remove) write "deleteme"
+(syn-remove) seek "deleteme" to 0
+(syn-remove) read "deleteme"
+(syn-remove) close "deleteme"
+(syn-remove) end
+syn-remove: exit(0)
+Execution of 'syn-remove' complete.
+Timer: 89 ticks
+Thread: 30 idle ticks, 54 kernel ticks, 5 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 97 reads, 225 writes
+hd1:0: 102 reads, 0 writes
+Console: 1020 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

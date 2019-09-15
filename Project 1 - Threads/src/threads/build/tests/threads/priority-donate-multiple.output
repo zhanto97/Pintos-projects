@@ -1,0 +1,33 @@
+Writing command line to /tmp/nbQWsafpCI.dsk...
+warning: can't find squish-pty, so terminal input will fail
+bochs -q
+Kernel command line: -q run priority-donate-multiple
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+374 pages available in user pool.
+Calibrating timer...  204,600 loops/s.
+Boot complete.
+Executing 'priority-donate-multiple':
+(priority-donate-multiple) begin
+(priority-donate-multiple) Main thread should have priority 32.  Actual priority: 32.
+(priority-donate-multiple) Main thread should have priority 33.  Actual priority: 33.
+(priority-donate-multiple) Thread b acquired lock b.
+(priority-donate-multiple) Thread b finished.
+(priority-donate-multiple) Thread b should have just finished.
+(priority-donate-multiple) Main thread should have priority 32.  Actual priority: 32.
+(priority-donate-multiple) Thread a acquired lock a.
+(priority-donate-multiple) Thread a finished.
+(priority-donate-multiple) Thread a should have just finished.
+(priority-donate-multiple) Main thread should have priority 31.  Actual priority: 31.
+(priority-donate-multiple) end
+Execution of 'priority-donate-multiple' complete.
+Timer: 137 ticks
+Thread: 0 idle ticks, 140 kernel ticks, 0 user ticks
+Console: 1103 characters output
+Keyboard: 0 keys pressed
+Powering off...
+========================================================================
+                       Bochs x86 Emulator 2.6.2
+                Built from SVN snapshot on May 26, 2013
+                  Compiled on Mar  7 2019 at 23:31:29
+========================================================================

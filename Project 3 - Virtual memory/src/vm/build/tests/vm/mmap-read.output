@@ -1,0 +1,34 @@
+Copying tests/vm/mmap-read into /tmp/FKrDzVwbnk.dsk...
+Copying ../../tests/vm/sample.txt into /tmp/FKrDzVwbnk.dsk...
+Writing command line to /tmp/8aTNSa8IwK.dsk...
+qemu -hda /tmp/8aTNSa8IwK.dsk -hdb /tmp/O8a1UohSHM.dsk -hdc /tmp/FKrDzVwbnk.dsk -hdd /tmp/VnW1aKNbGQ.dsk -m 4 -net none -nographic -monitor null
+Kernel command line: -q -f put mmap-read put sample.txt run mmap-read
+Pintos booting with 4,096 kB RAM...
+374 pages available in kernel pool.
+373 pages available in user pool.
+Calibrating timer...  207,052,800 loops/s.
+hd0:0: detected 145 sector (72 kB) disk, model "QEMU HARDDISK", serial "QM00001"
+hd0:1: detected 4,032 sector (1 MB) disk, model "QEMU HARDDISK", serial "QM00002"
+hd1:0: detected 103 sector (51 kB) disk, model "QEMU HARDDISK", serial "QM00003"
+hd1:1: detected 8,064 sector (3 MB) disk, model "QEMU HARDDISK", serial "QM00004"
+Formatting file system...done.
+Boot complete.
+Putting 'mmap-read' into the file system...
+Putting 'sample.txt' into the file system...
+Executing 'mmap-read':
+(mmap-read) begin
+(mmap-read) open "sample.txt"
+(mmap-read) mmap "sample.txt"
+(mmap-read) end
+mmap-read: exit(0)
+Execution of 'mmap-read' complete.
+Timer: 87 ticks
+Thread: 30 idle ticks, 56 kernel ticks, 2 user ticks
+hd0:0: 0 reads, 0 writes
+hd0:1: 101 reads, 216 writes
+hd1:0: 103 reads, 0 writes
+hd1:1: 0 reads, 0 writes
+Console: 1026 characters output
+Keyboard: 0 keys pressed
+Exception: 6 page faults
+Powering off...
